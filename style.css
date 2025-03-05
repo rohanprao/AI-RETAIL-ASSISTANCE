@@ -1,0 +1,416 @@
+/* Main styling for the entire app */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Custom styling for headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: #1e40af;
+    font-weight: 600;
+}
+
+p, label, .stMarkdown, .stText, p, li, span, div, .dataframe td, [data-testid="stDataFrame"] td {
+    color: #2d3748 !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h1 {
+    background: #2563eb;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.1);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Improve text contrast */
+
+/* Sidebar styling */
+.sidebar .sidebar-content {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-right: 1px solid #e2e8f0;
+}
+
+.sidebar h1, .sidebar h2, .sidebar h3, .sidebar p, .sidebar span, .sidebar div {
+    color: #1a202c !important;
+}
+
+.navigation {
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    margin: 8px 0;
+    color: #1a202c;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+.nav-item:hover {
+    background-color: #3182ce;
+    color: white;
+    transform: translateY(-1px);
+    border-color: #3182ce;
+}
+
+.nav-item i {
+    margin-right: 12px;
+    color: #3182ce;
+    font-size: 22px;
+}
+
+.nav-item:hover i {
+    color: white;
+}
+
+.nav-title {
+    color: #2563eb;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-subtitle {
+    color: #1a202c;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-section {
+    color: #1a202c;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+.about-section h3 {
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    color: #1a202c;
+    line-height: 1.8;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+.stButton > button:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Input field styling */
+.stTextInput > div > div > input {
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    color: #adb5bd;
+    background-color: white;
+}
+
+/* Checkbox styling */
+.stCheckbox > div > label > div {
+    background-color: #2563eb;
+}
+
+/* Card-like containers for content */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.card h3, .card h4 {
+    color: #1e40af;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Main content area background */
+.main-page, .chart-page, .bcode-page {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Success message styling */
+.success-message, .stSuccess {
+    background-color: #f0fdf4;
+    color: #166534;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #22c55e;
+    margin: 10px 0;
+}
+
+/* Warning message styling */
+.warning-message, .stWarning {
+    background-color: #fffbeb;
+    color: #92400e;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #f59e0b;
+    margin: 10px 0;
+}
+
+/* Error message styling */
+.error-message, .stError {
+    background-color: #fef2f2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #ef4444;
+    margin: 10px 0;
+}
+
+/* Info message styling */
+.stInfo {
+    background-color: #f0f9ff;
+    color: #0c4a6e;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #0ea5e9;
+    margin: 10px 0;
+}
+
+/* Styling for tables */
+.dataframe {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.dataframe th {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.dataframe tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.dataframe tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Styling for plots */
+.stPlotlyChart {
+    background-color: white !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Make sure plots are visible */
+.js-plotly-plot, .plotly, .plot-container {
+    background-color: white !important;
+}
+
+.js-plotly-plot .plot-container .svg-container {
+    background-color: white !important;
+}
+
+/* Ensure chart text is visible */
+.js-plotly-plot .plot-container .svg-container text {
+    fill: #495057 !important;
+}
+
+/* Ensure axis lines are visible */
+.js-plotly-plot .plot-container .svg-container .main-svg .cartesianlayer .gridlayer path {
+    stroke: #e2e8f0 !important;
+    stroke-width: 1px !important;
+}
+
+.js-plotly-plot .plot-container .svg-container .main-svg .cartesianlayer .axislayer path {
+    stroke: #94a3b8 !important;
+    stroke-width: 2px !important;
+}
+
+/* Styling for selectbox */
+.stSelectbox > div > div > div {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    color: #adb5bd;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+    border-top: 1px solid #e2e8f0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Tabs styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 4px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #f1f5f9;
+    border-radius: 8px 8px 0 0;
+    padding: 10px 20px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #2563eb !important;
+    color: white !important;
+}
+
+/* Radio buttons */
+.stRadio > div {
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Expander */
+.stExpander {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Metrics */
+.stMetric {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.stMetric [data-testid="stMetricLabel"] {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.stMetric [data-testid="stMetricValue"] {
+    color: #1e40af;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Spinner */
+.stSpinner > div {
+    border-color: #2563eb !important;
+}
+
+/* Dataframe container styling */
+[data-testid="stDataFrame"] {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Ensure table headers are visible */
+[data-testid="stDataFrame"] th {
+    background-color: #2563eb !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+/* Analytics dashboard label styling */
+.analytics-label {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Animated elements */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animated {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.product-info {
+    background-color: #ffffff;
+    color: #adb5bd;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 300;
+}
